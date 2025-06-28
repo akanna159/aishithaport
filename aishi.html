@@ -2,217 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aishitha Saravanan Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arvin Kanna - Portfolio</title>
   <style>
-    /* Reset & base */
-    * {
-      box-sizing: border-box;
-    }
     body {
+      font-family: Arial, sans-serif;
       margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      color: #1a1a1a;
-      background: #fff;
-      line-height: 1.6;
-      font-size: 18px;
+      background-color: #f4f4f4;
+      color: #333;
     }
-    a {
-      color: #007acc;
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #005599;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
       text-decoration: none;
-      transition: color 0.3s ease;
+      margin: 0 15px;
+      font-weight: bold;
     }
-    a:hover {
-      color: #005f99;
+    nav a:hover {
       text-decoration: underline;
     }
-
-    /* Container */
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 60px 20px;
-    }
-
-    /* Header */
-    header {
-      text-align: center;
-      margin-bottom: 80px;
-    }
-    header h1 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 3.2rem;
-      margin: 0 0 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-    }
-    header p {
-      font-weight: 400;
-      font-size: 1.25rem;
-      color: #666;
-      margin: 0;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    /* Section headings */
-    h2 {
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-      font-size: 1.75rem;
-      margin-bottom: 24px;
-      border-bottom: 2px solid #007acc;
-      padding-bottom: 8px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-
     section {
-      margin-bottom: 60px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
     }
-
-    /* Cards */
+    h2 {
+      color: #003366;
+    }
     .card {
-      padding: 25px 20px;
-      border-left: 4px solid #007acc;
-      background: #f9fbfd;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
       margin-bottom: 20px;
-      border-radius: 4px;
-      box-shadow: 0 0 10px #e3e8f0;
-      transition: box-shadow 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
-    .card:hover {
-      box-shadow: 0 0 20px #a7c9f9;
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
     }
-
-    /* Lists */
-    ul {
-      padding-left: 1.2em;
-      margin: 0;
-      list-style-type: disc;
-    }
-
-    /* Text stylings */
-    strong {
-      color: #007acc;
-    }
-
-    /* Responsive */
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.4rem;
-      }
-      header p {
-        font-size: 1rem;
-      }
-      .container {
-        padding: 40px 15px;
-      }
+    a {
+      color: #003366;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Aishitha Saravanan</h1>
-      <p>University of Central Florida, Burnett Honors College | B.S. Computer Science | GPA: 3.8 | Sanford, FL</p>
-    </header>
+  <header>
+    <h1>Arvin Kanna</h1>
+    <p>Sophomore | Computer Engineering | UCF</p>
+    <p>Email: <a href="mailto:arvinkanna@gmail.com" style="color:white;">arvinkanna@gmail.com</a></p>
+    <p><span style="color: white;">Phone: 407-676-1133</span></p>
 
-    <section id="education">
-      <h2>Education</h2>
-  <div class="card">
+  </header>
 
-      <p><strong>University of Central Florida, Burnett Honors College</strong><br />
-      Bachelor of Science in Computer Science, GPA: 3.8<br />
-      Expected May 2028</p>
-  </div>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+  </nav>
 
-  <div class="card">
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I’m a sophomore pursuing a Bachelor's in Computer Engineering with a minor in Aerospace Studies at the University of Central Florida. I have a passion for merging hardware and software to build meaningful, accessible solutions. My experience includes working with REST APIs, embedded systems, and full-stack tools to create real-world impact.</p>
+    </div>
+  </section>
 
-      <p><strong>Seminole State College</strong><br />
-      Associate of Arts Degree - Dual Enrollment, GPA: 4.0<br />
-      May 2024</p>
-  </div>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Delivery Chain Tracker (C)</h3>
+      <p>Singly linked list used to manage delivery hubs with recursion and analysis features.</p>
+    </div>
+    <div class="card">
+      <h3>Student Records Processor (C)</h3>
+      <p>Validated and searched student records using file I/O and string functions like <code>strcpy</code> and <code>strcmp</code>.</p>
+    </div>
+    <div class="card">
+      <h3>AI Buddy Chatbot (Personal Project)</h3>
+      <p>Interactive chatbot designed to help students study by asking questions and detecting emotions for better motivation and feedback.</p>
+    </div>
+  </section>
 
+  <section id="resume">
+    <h2>Resume Highlights</h2>
+    <div class="card">
+      <h3>Education</h3>
+      <p><strong>University of Central Florida</strong><br>B.S. in Computer Engineering, Minor in Aerospace Studies<br>GPA: 3.95 / 4.00 (Aug 2024 – Present)</p>
+      <p><strong>Seminole State College</strong><br>Associate in Arts (Information Technology)<br>GPA: 4.00 / 4.00 (Aug 2022 – May 2024)</p>
+    </div>
 
-      <section id="experience">
-  <h2>Experience</h2>
+    <div class="card">
+      <h3>Skills</h3>
+      <ul>
+        <li>Languages: Java, JavaScript, C, C++, HTML, CSS, SQL</li>
+        <li>Tools: Arduino, DB Visualizer, Toad, Excel, PowerPoint, SharePoint</li>
+        <li>Concepts: SDLC, Database Management, Network Security</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <p><strong>BNY – Operations Intern (Jun 2025 – Present)</strong></p>
-    <ul>
-      <li>Reviewed and improved financial report accuracy and data workflows</li>
-      <li>Collaborated with cross-functional teams to optimize reporting processes</li>
-    </ul>
-  </div>
+    <div class="card">
+      <h3>Experience</h3>
+      <strong>Verizon Wireless – Data Engineer Intern (Jun 2023 – Jul 2023)</strong>
+      <ul>
+        <li>Reverse-engineered Java REST APIs and optimized performance</li>
+        <li>Deployed SevOne to monitor network traffic and boost bandwidth</li>
+        <li>Created and demoed JavaScript tools for internal use</li>
+      </ul>
+      <strong>Cyber-Seniors – Tech Mentor</strong>
+      <ul>
+        <li>Taught internet safety to senior citizens using original guides</li>
+      </ul>
+      <strong>The Sharing Center – Volunteer</strong>
+      <ul>
+        <li>Assisted customers and organized merchandise in retail setting</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <p><strong>Sonic Jellybean – Software Intern (Jul 2024 – Sep 2024)</strong></p>
-    <ul>
-      <li>Enhanced company website UX using WordPress</li>
-      <li>Researched AI and telecommunication technologies</li>
-    </ul>
-  </div>
+    <div class="card">
+      <h3>Certifications & Activities</h3>
+      <ul>
+        <li>Dean’s List 2024, Provost Scholar, Bright Futures Scholar</li>
+        <li>Microsoft Office Specialist (Word, Excel, PowerPoint)</li>
+        <li>AFROTC Detachment 159 – Leadership Lab</li>
+      </ul>
+    </div>
+  </section>
 
-  <div class="card">
-    <p><strong>Raytheon Technologies Future Ready Engineers Program (Mar 2024 - Oct 2024)</strong></p>
-    <ul>
-      <li>Developed projects from design to development leading 4+ engineering fellows using MVC design patterns</li>
-      <li>Coached by Amazon, Bloomberg, and Capital One engineers on Agile, CI/CD, Git, and microservice patterns</li>
-    </ul>
-  </div>
-
-  <div class="card">
-    <p><strong>UCF Youth Advisory Board Internship - Research Intern (June 2022 - July 2023)</strong></p>
-    <ul>
-      <li>Designed solutions for social media platform security</li>
-      <li>Collaborated with researchers and high school students</li>
-      <li>Conceptualized an app add-on focused on enhanced safety features</li>
-    </ul>
-  </div>
-
-</section>
-
-
-    </section>
-
-    <section id="certifications">
-      <h2>Honors & Certifications</h2>
-      <div class="card">
-        <ul>
-          <li>Congressional Award</li>
-          <li>MTA: Introduction to Programming using Java</li>
-          <li>Microsoft Office Specialist (Word, Excel, PowerPoint)</li>
-          <li>CompTIA Network+</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="coursework">
-      <h2>Relevant Coursework</h2>
-      <div class="card">
-        <ul>
-          <li>Java, Advanced HTML/CSS, JavaScript</li>
-          <li>SQL / Database Management</li>
-          <li>Network Computer Maintenance & Security</li>
-          <li>Digital Media & C Programming</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="activities">
-      <h2>Extracurricular Activities</h2>
-      <div class="card">
-        <ul>
-          <li>Society of Asian Scientists & Engineers (SASE)</li>
-          <li>Indian Student Association (ISA)</li>
-          <li>Girls Who Code</li>
-        </ul>
-      </div>
-    </section>
-  </div>
+  <footer>
+    <p>Created by Arvin Kanna</p>
+  </footer>
 </body>
 </html>
